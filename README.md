@@ -7,7 +7,7 @@ This system uses FTPS (Filezilla Server) to have the unit push details up to the
 
 The index.php is located in the same directory as uploaded files. HTTP/PHP will need to installed for web display of data (IIS was our platform). 
 
-run the install.sh as sudo install.sh 
+sudo ./install.sh 
 
 lftp util needed for this to work.
 
