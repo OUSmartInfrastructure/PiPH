@@ -7,11 +7,17 @@
 #sudo nano /etc/lftp.conf --- add lines: set net:reconnect-interval-base 0 & set ssl:verify-certificate into the bottom
 #sudo crontab -e --- add line:  * * * * * [path to files]
 
+#Set execute on piph.sh
+#sudo chmod +x piph.sh
+
 #piph.conf file has following format
 #Host:yourftpsserver.com
 #Username:pi
 #Password:raspberry
 #Interface:eth0
+
+#To run application sudo is needed.
+# sudo ./piph.sh
 
 conf_file=piph.conf
 interface=$(sed '4q;d' $conf_file | cut -d':' -f 2)
