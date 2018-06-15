@@ -15,7 +15,11 @@ sudo nano /etc/lftp.conf --- add lines: set net:reconnect-interval-base 0 & set 
 sudo crontab -e --- add line:  * * * * * [path to files]
 
 piph.conf file has following format
+
 Host:yourftpsserver.com
+
 Username:pi
+
 Password:raspberry
+
 Interface:eth0
