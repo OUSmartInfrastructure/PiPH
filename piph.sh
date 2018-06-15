@@ -17,7 +17,7 @@
 #Interface:eth0
 
 #To run application sudo is needed.
-# sudo ./piph.sh
+#sudo ./piph.sh
 
 conf_file=piph.conf
 interface=$(sed '4q;d' $conf_file | cut -d':' -f 2)
