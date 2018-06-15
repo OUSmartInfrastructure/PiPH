@@ -17,6 +17,9 @@ sudo crontab -e --- add line:  * * * * * [path to files]
 piph.conf file has following format
 
 Host:yourftpsserver.com
+
 Username:pi
+
 Password:raspberry
+
 Interface:eth0
