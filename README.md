@@ -20,6 +20,7 @@ sudo nano /etc/lftp.conf --- add lines: set net:reconnect-interval-base 0 & set 
 ![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/LFTP_Configuration.PNG)
 
 sudo crontab -e --- add line:  * * * * * [path to files]
+
 ![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/Crontab-command.PNG)
 
 ![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/Crontab.PNG)
