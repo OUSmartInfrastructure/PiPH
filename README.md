@@ -17,10 +17,12 @@ The install script will run:
 sudo apt install lftp
 
 sudo nano /etc/lftp.conf --- add lines: set net:reconnect-interval-base 0 & set ssl:verify-certificate into the bottom
+![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/LFTP_Configuration.PNG)
 
 sudo crontab -e --- add line:  * * * * * [path to files]
+![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/Crontab-command.PNG)
 
-
+![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/Crontab.PNG)
 piph.conf file has following format
 
 Host:yourftpsserver.com
@@ -30,3 +32,4 @@ Username:pi
 Password:raspberry
 
 Interface:eth0
+![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/PiPH/master/Images/Configuration_file.PNG)
