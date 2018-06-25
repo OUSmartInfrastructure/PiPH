@@ -11,7 +11,7 @@ Please run within the directory folder:
 sudo chmod u+x install.sh
 sudo ./install.sh 
 
-lftp util needed for this to work.
+We will use lftp as our ftps client that shall be running with a self-signed certificate.
 The install script will run:
 
 sudo apt install lftp
