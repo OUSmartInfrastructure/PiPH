@@ -11,15 +11,21 @@ sudo chmod u+x install.sh
 sudo ./install.sh 
 
 lftp util needed for this to work.
-
 The install script will run:
+
 sudo apt install lftp
+
 sudo nano /etc/lftp.conf --- add lines: set net:reconnect-interval-base 0 & set ssl:verify-certificate into the bottom
+
 sudo crontab -e --- add line:  * * * * * [path to files]
 
 
 piph.conf file has following format
+
 Host:yourftpsserver.com
+
 Username:pi
+
 Password:raspberry
+
 Interface:eth0
