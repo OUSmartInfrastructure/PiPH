@@ -19,7 +19,7 @@
 #To run application sudo is needed.
 #sudo ./piph.sh
 
-conf_file=piph.conf
+conf_file=/usr/local/bin/PiPH/piph.conf
 interface=$(sed '4q;d' $conf_file | cut -d':' -f 2)
 Host=$(sed '1q;d' $conf_file | cut -d':' -f 2)
 Username=$(sed '2q;d' $conf_file | cut -d':' -f 2)
@@ -37,12 +37,12 @@ echo "Seconds Since Boot: $Uptime"
 echo $IP','$Hostname','$MAC','$Uptime > $MAC_1.txt
 
 lftp <<SCRIPT
-set ftps:initial-prot ""
+set ftps:initial-prot P
 set ftp:ssl-force true
 set ftp:ssl-protect-data true
 open $Host
 user $Username $Password
 ls
-put $MAC_1.txt
+put /usr/local/bin/PiPH/$MAC_1.txt
 exit
 SCRIPT
