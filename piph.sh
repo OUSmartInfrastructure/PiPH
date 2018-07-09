@@ -34,7 +34,7 @@ echo "Hostname: $Hostname"
 echo "IP Address: $IP"
 echo "MAC Address: $MAC"
 echo "Seconds Since Boot: $Uptime"
-echo $IP','$Hostname','$MAC','$Uptime > $MAC_1.txt
+echo $IP','$Hostname','$MAC','$Uptime > /usr/local/bin/PiPH/$MAC_1.txt
 
 lftp <<SCRIPT
 set ftps:initial-prot P
